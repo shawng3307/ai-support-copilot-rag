@@ -96,6 +96,11 @@ cp .env .env
 
 ```bash
 uvicorn app.main:app --reload
+
+or
+
+docker run -p 8000:8000 -v $(pwd)/app:/app/app --env-file .env ai-support-copilot
+
 ```
 
 6. **Test the endpoint**
